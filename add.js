@@ -353,3 +353,172 @@ const bill = 275;
 const tip = bill <= 300 && bill >= 50 ? bill * 0.15 : bill * 0.2;
 
 console.log (`The bill was ${bill}, the tip was ${tip}, and the total value ${bill + tip}`);
+
+
+
+
+
+
+
+
+
+
+
+
+//////////////////////////////////////////////// * JS FUNDAMENTALS 2 * ///////////////////////////////////////////////////////////
+
+// * Activating Strict Mode
+// * Functions
+// * Functions Declarations vs Expressions
+// * Arrow Functions 
+// * Intro to Arrays 
+// * Basics Operation with Arrays *
+
+///////////////////////////////////////// * Activating Strict Mode * //////////////////////////////////
+'use strict';
+
+///////////////////////////////////////// * Functions
+
+// function logger() {
+//     console.log('My name is Ivan');
+// }
+
+// logger();                           //calling, running, or invoking the function
+// logger();                           
+// logger();                           
+
+// // EXAMPLE 1
+// function fruitProcessor(apples, oranges) {
+//     const juice =`Juice with ${apples} apples and ${oranges} oranges.`;
+//     return juice;
+// }
+
+// const appleJuice = fruitProcessor (5, 0);
+// console.log(appleJuice);
+
+
+// // EXAMPLE 2
+// function programmingLanguages( html, css, js) {
+//     const boothCamp = `It takes ${html} months of html, ${css} of css, and ${js} of js to become a frontend developer.`;
+//     return boothCamp;
+// }
+
+// const months = programmingLanguages(1, 1, 2);
+// console.log(months);
+
+// // EXAMPLE 3
+// function days( monday, tuesday, wednesday) {
+//     const toDos = `Monday ${monday}, Tuesday ${tuesday}, Wednesday ${wednesday}`;
+//     return toDos
+// }
+// const tasks = days ('Take out the trash', 'Study code', 'school work');
+// console.log(tasks);
+
+///////////////////////////////////////// * Functions Declarations vs Expressions
+
+// //Function Declaration
+// function calcAge1 (birthYear) {          
+//     return 2037 - birthYear;
+// }
+
+// const age1 = calcAge1 (1991);
+// console.log (age1);
+
+// // Function Expression
+// const calAge2 = function (birthYear) {    
+//     return 2037 - birthYear;
+// }
+
+// const age2 = calAge2(1991);
+
+// console.log(age1, age2);
+
+///////////////////////////////////////// * Arrow Functions 
+
+// const Age2 = function (birthYear) {    
+//     return 2037 - birthYear;
+// }
+
+//Arrow Functions
+// const Age3 = birthYear => 2037 - birthYear;
+// const age3 = Age3(1988);
+
+// console.log(age3);
+
+
+// const yearsUntilRetirement = actualAge => 65 - actualAge;
+// const age = yearsUntilRetirement(55);
+
+// console.log(age);
+
+// const yearsUntilRetirement = (birthYear, firstName) => {
+//     const age = 2021 - birthYear;
+//     const retirement = 65 - age;
+//     return `${firstName} retires in ${retirement} years`;
+// }
+
+// console.log(yearsUntilRetirement(1988, 'Ivan'));
+
+
+// const costOfFruit = (initialNumber, fruitName) => {
+//     const numberOfFruitsConsumed = initialNumber - 3;
+//     const priceOfFruit = numberOfFruitsConsumed * 3;
+//     return `The price for all ${fruitName} is a total of ${priceOfFruit}`;
+// }
+
+// console.log(costOfFruit(10,'Mangos'))
+
+
+///////////////////////////////////////// * Functions calling other Functions *
+
+// EXAMPLE 3
+// const cutPieces = function (fruit) {
+//     return fruit * 4;
+// }
+
+// const fruitProcessor = function (apples, oranges) {
+//     const applePieces = cutPieces(apples);
+//     const orangesPieces = cutPieces(oranges);
+
+//     const juice = `Juice with ${applePieces} pieces of apple and ${orangesPieces} pieces of orange.`;
+//     return juice;
+// };
+
+// console.log(fruitProcessor(2,3));
+
+///////////////////////////////////////// * Intro to Arrays *
+
+// const friends = ['Michael','Steven','Peter'];
+// console.log(friends);
+
+// console.log(friends[0])
+// console.log(friends[2])
+
+// console.log(friends.length);
+// console.log(friends[friends.length - 1]);
+
+// friends[2] = 'Diana';
+// console.log(friends);
+
+// const firstName = 'Ivan';
+// const friendName = ['Mario', 'Arnaldo', ' Dennis'];
+// const infoIvan = [firstName, 'Perez', 2021 - 1988, 'student', friendName];
+
+// console.log(infoIvan);
+
+// // Exercise
+// const calcAge = function (birthYear) {
+//     return 2021 - birthYear;
+// }
+// const years = [1990, 1998, 1995, 2006];
+
+// const age1 = calcAge(years[0]);
+// const age2 = calcAge(years[1]);
+// const age3 = calcAge(years[2]);
+
+// console.log(age1,age2,age3);
+
+// const arrayAges = [calcAge(years[0]), calcAge(years[1]), calcAge(years[2])];
+// console.log(arrayAges);
+
+///////////////////////////////////////// * Basics Operation with Arrays *
