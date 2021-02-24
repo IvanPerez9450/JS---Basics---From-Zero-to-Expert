@@ -362,17 +362,21 @@ console.log (`The bill was ${bill}, the tip was ${tip}, and the total value ${bi
 
 
 
-
-
-
-//////////////////////////////////////////////// * JS FUNDAMENTALS 2 * ///////////////////////////////////////////////////////////
+///////////////////////////////////////////////////// * JS FUNDAMENTALS 2 * ////////////////////////////////////////////////////
 
 // * Activating Strict Mode
 // * Functions
 // * Functions Declarations vs Expressions
 // * Arrow Functions 
 // * Intro to Arrays 
-// * Basics Operation with Arrays *
+// * Basics Operation with Arrays 
+// * Coding Challenge 2
+// * Introduction to Objects
+// * Object Method
+// * The for Loop
+// * Looping Arrays, Breaking and Continuity
+// * Looping backwards and loops in loops
+// * The While Loop
 
 ///////////////////////////////////////// * Activating Strict Mode * //////////////////////////////////
 'use strict';
@@ -522,3 +526,187 @@ console.log (`The bill was ${bill}, the tip was ${tip}, and the total value ${bi
 // console.log(arrayAges);
 
 ///////////////////////////////////////// * Basics Operation with Arrays *
+
+// const friends = ['Michael','Steven','Peter'];   
+
+// friends.push('Jay');                            // push - Adds elements at the end 
+// console.log(friends);
+
+// friends.unshift('Maria');                       // unshift - Adds elements at the Begining
+// console.log(friends);
+
+// friends.pop();                                  // pop - Remove the last elements 
+// friends.pop();                                 
+// console.log(friends);
+
+// friends.shift();                                // pop - Remove the first elements 
+// console.log(friends);
+
+// console.log(friends.indexOf('Michael'));
+
+// console.log(friends.includes('Michael'));
+// console.log(friends.includes('Bob'));
+
+// if (friends.includes('Michael')) {
+//     console.log('You have a friend called Michael');
+// }
+
+///////////////////////////////////////// * Introduction to Objects * DOT vs Bracket Notation
+
+// const ivan = {                                   //object literal 
+//     firstName: 'Ivan',
+//     lastName: 'Perez',
+//     age: 2021 - 1988,
+//     job: 'teacher',
+//     friends: ['Michael','Steven','Peter'] 
+// };
+// console.log(ivan);
+// console.log(ivan.lastName)
+// console.log(ivan['lastName']);
+
+// const nameKey = 'Name';
+// console.log(ivan['first' + nameKey]);
+// console.log(ivan['last' + nameKey]);
+
+// ivan.location = 'US';                           // Add info to an object
+// ivan['email'] = 'carlos@gmail.com';
+// console.log(ivan);
+
+///////////////////////////////////////// * Object Method
+
+// const ivan = {                                   //object literal 
+//     firstName: 'Ivan',
+//     lastName: 'Perez',
+//     birthYear: 1988,
+//     job: 'teacher',
+//     friends: ['Michael','Steven','Peter'],
+//     hasDriverLicence: true, 
+// //     calcAge: function (birthYear) {
+// //         return 2021 - birthYear;
+// //     }
+// // };
+// // calcAge: function () {
+// //     return 2021 - this.birthYear;
+// // }
+//     calcAge: function () {
+//         this.age = 2021 - this.birthYear;
+//         return this.age;
+//     }
+// };
+// console.log(ivan.calcAge());
+
+// console.log(ivan.age);
+// console.log(ivan.age);
+// console.log(ivan.age);
+
+///////////////////////////////////////// * The for Loop
+
+// for( let rep = 1; rep <= 10; rep ++){
+//     console.log(`Lifting weights repwtition ${rep}`);
+// }
+
+///////////////////////////////////////// * Looping Arrays, Breaking and Continuity
+
+// const jonasArray = [
+//     'Jonas', 
+//     'Schmedtmsn',
+//     2031 - 1991,
+//     'teacher',
+//     ['Michael','Peter','Steven'],
+//     true
+// ];
+// for (let i = 0; i < jonasArray.length; i ++) {
+//     console.log(jonasArray[i]);
+// }
+
+
+// const years = [1991, 2007, 1969, 2020];
+// const ages = [];
+
+// for (let i = 0; i < years.length; i ++ ) {
+//     ages.push(2037 - years[i]);
+// }
+// console.log(ages);
+
+// const jonasArray = [
+//     'Jonas', 
+//     'Schmedtmsn',
+//     2031 - 1991,
+//     'teacher',
+//     ['Michael','Peter','Steven'],
+//     true
+// ];
+
+//continue statement - access the loop and continue to the next one
+
+// console.log('---ONLY STRINGS---');
+
+// for (let i = 0; i < jonasArray.length; i ++) {
+//     if (typeof jonasArray[i] !=='string') continue;
+
+//     console.log(jonasArray[i]);
+// }
+
+// // break statement - terminate the loop
+
+// console.log('---BREAK WITH NUMBER---');
+
+// for (let i = 0; i < jonasArray.length; i ++) {
+//     if (typeof jonasArray[i] === 'number') break;
+
+//     console.log(jonasArray[i]);
+// }
+
+
+///////////////////////////////////////// * Looping backwards and loops in loops
+
+// const jonasArray = [
+//     'Jonas', 
+//     'Schmedtmsn',
+//     2031 - 1991,
+//     'teacher',
+//     ['Michael','Peter','Steven'],
+//     true
+// ];
+// for (let i = jonasArray.length -1; i > 0; i --) {
+//     console.log(jonasArray[i]);
+// }
+
+
+
+// for (let exercise = 1; exercise < 4; exercise ++) {
+//     console.log(`---Starting Exercise ${exercise}` );
+
+//     for (let rep = 1; rep < 6; rep++) {
+//         console.log (`exercise ${exercise}; Lifting weight repetition ${rep}`);
+//     }
+// }
+
+///////////////////////////////////////// * The While Loop
+
+// for (let rep = 1; rep <=10; rep++) {
+//     console.log(`Lifting weights repetition ${rep}`);
+// }
+
+// let rep = 1;
+// while (rep <= 10) {
+//     console.log(`Lifting weights repetition ${rep}`);
+//   rep++;
+// }
+
+// let dice = Math.trunc(Math.random() * 6) + 1;
+
+// while (dice !==6) {
+//     console.log(`You rolled a ${dice}`);
+//     dice = Math.trunc(Math.random() * 6) + 1;
+//     if (dice ===6) console.log('Loop is about to end...')
+// }
+
+
+
+
+
+
+
+
+
