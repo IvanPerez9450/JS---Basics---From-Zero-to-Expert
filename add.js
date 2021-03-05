@@ -702,3 +702,4 @@ console.log (`The bill was ${bill}, the tip was ${tip}, and the total value ${bi
 //     dice = Math.trunc(Math.random() * 6) + 1;
 //     if (dice ===6) console.log('Loop is about to end...')
 // }
+//
